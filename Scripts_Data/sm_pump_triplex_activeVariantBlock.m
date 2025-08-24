@@ -1,0 +1,11 @@
+function blk = sm_pump_triplex_activeVariantBlock(variant_sub_name)
+% Code to return path to block which is the active variant.
+
+
+vnt_list = get_param(variant_sub_name,'Variants');
+vnt_actv = get_param(variant_sub_name,'ActiveVariant');
+
+blk = [];
+if(~isempty(vnt_actv))
+    blk = vnt_list(strcmp(vnt_actv,{vnt_list(:).Name})).BlockName;
+end

@@ -1,0 +1,11 @@
+Fluid -> water density 998 kg/m^3
+
+load -> chamber 160 liter
+
+motor -> speed -> mat data -> TRP_Par - > target_spd -> 1 m/s
+
+pump -> cylinder length 10 m
+
+depth -> 12 meter
+
+
